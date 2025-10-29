@@ -17,7 +17,7 @@ const navLinks = [
   { href: "#hero", label: "Home" },
   { href: "#about", label: "About us" },
   { href: "#services", label: "Services" },
-  { href: "#testimonials", label: "Testimonials" },
+  // { href: "#testimonials", label: "Testimonials" },
 ];
 
 const Navbar = () => {
@@ -88,28 +88,30 @@ const Navbar = () => {
 
   return (
     <nav className="">
-      <div className="container fixed z-50 left-0 right-0">
+      <div className="container fixed z-50 left-0 right-0 ">
         {windowResize > 1023 ? (
           <motion.div
             ref={ref}
-            className={`md:flex hidden justify-between gap-8 items-center absolute z-[9999] px-3 py-3 rounded-full top-6 left-0`}
+            className={`md:flex hidden justify-between gap-8 items-center absolute z-[9999] px-3 py-3 rounded-full top-6 left-0 border border-slate-500`}
             style={{
               transition:
                 "all 550ms, background 0ms, box-shadow 0ms, translate 500ms",
               width: isView ? `${navBarWidth}%` : "100%",
               left: isView ? "50%" : "0%",
               x: isView ? "-50%" : "0%",
-              background: isView ? "#0a1016" : "transparent",
-              boxShadow: isView
-                ? "inset 4px -4px 10px #4C0E49, inset -3px 4px 10px #3C1477, rgb(60, 20, 119) -6px 5px 10px inset"
-                : "none",
+              background: isView
+                ? "rgba(241, 245, 249, 0.4)" 
+                : "transparent",
+              backdropFilter: isView ? "blur(12px)" : "none",
+              WebkitBackdropFilter: isView ? "blur(12px)" : "none", 
+              boxShadow: isView ? "0 4px 20px rgba(0,0,0,0.1)" : "none",
             }}
           >
             <div className="flex items-end justify-start pl-3">
-              <Image src="/logo.svg" alt="Logo" width="70" height="60" />
+              <Image src="/logo.png" alt="Logo" width="70" height="60" />
               <Image
-                className={` ${isView ? "hidden" : ""}`}
-                src="/logo-title.svg"
+                className={`ml-[-38px] ${isView ? "hidden" : ""}`}
+                src="/logo-title.png"
                 alt="Logo"
                 width="101"
                 height="60"
@@ -158,14 +160,14 @@ const Navbar = () => {
             <div className="flex items-end justify-start pl-3">
               <Image
                 className="xsm:max-w-[70px] max-w-[50px]"
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Logo"
                 width="70"
                 height="60"
               />
               <Image
                 className="xsm:max-w-[101px] max-w-[80px]"
-                src="/logo-title.svg"
+                src="/logo-title.png"
                 alt="Logo"
                 width="101"
                 height="60"

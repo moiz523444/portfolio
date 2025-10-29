@@ -38,17 +38,18 @@ export default function Template({ children }: { children: React.ReactNode }) {
       >
         <div className="md:block hidden">
           <AnimatedCursor
-            color="255, 255 ,255"
+            color="0, 0 ,0" // Black cursor for visibility on light background
             innerSize={12}
             outerSize={35}
             innerScale={1}
             outerScale={1.7}
-            outerAlpha={1}
+            outerAlpha={0.8} // Slight transparency for a softer effect
             outerStyle={{
-              mixBlendMode: "exclusion",
+              mixBlendMode: "multiply", // works better on light backgrounds
             }}
           />
         </div>
+
         <header>
           <Navbar />
         </header>

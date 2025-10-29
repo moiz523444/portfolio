@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 const cards = [
   {
-    url: "/portfolio/abstract-1.jpeg",
+    url: "/portfolio/abstract-1.png",
     title: "Title 1",
     id: 1,
   },
@@ -23,7 +23,7 @@ const cards = [
     id: 3,
   },
   {
-    url: "/portfolio/abstract-4.jpeg",
+    url: "/portfolio/abstract-2.jpeg",
     title: "Title 4",
     id: 4,
   },
@@ -73,17 +73,17 @@ const PortfolioSection = () => {
       <div ref={targetRef} className="relative h-[300vh] md:block hidden">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <div className="lg:ml-32 ml-6">
-            <Pills>
-              <span className="font-bold">Portfolio</span>
-            </Pills>
-            <h4 className="text-h2 font-bold leading-none">Our Portfolio</h4>
+            {/* <Pills>
+              <span className="font-bold">Work</span>
+            </Pills> */}
+            <h4 className="text-h2 font-bold leading-none">Our Work</h4>
             <Link
               className="rounded-full block mt-7 mb-1 self-center xsm:h-[72px] h-[58px] xsm:min-w-[16.75rem] min-w-[17.5rem] w-fit relative group"
               href="#contact"
             >
               <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
                 <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />
-                <div className="bg-[#05080B] rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
+                <div className="bg-linear-gradient(45deg, #4FACFE 0%, #00F2FE 55%) rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
                   <span className=" xsm:text-h6 text-body font-medium">
                     For More
                   </span>
@@ -94,7 +94,7 @@ const PortfolioSection = () => {
               </div>
             </Link>
           </div>
-          <motion.div style={{ x }} className="flex gap-4 bg-background">
+          <motion.div style={{ x }} className="flex gap-1 ">
             {cards.map((card) => {
               return (
                 <a
@@ -123,9 +123,9 @@ const PortfolioSection = () => {
       </div>
       <div className="container md:hidden">
         <div className="flex flex-col gap-3 mb-8">
-          <Pills>
+          {/* <Pills>
             <span className="font-bold">Portfolio</span>
-          </Pills>
+          </Pills> */}
           <h4 className="font-bold leading-none 2xl:text-h2 xl:text-[4.875rem] xsm:text-h3 text-h5 ">
             Our Portfolio
           </h4>
@@ -160,7 +160,7 @@ const PortfolioSection = () => {
         >
           <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
             <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />
-            <div className="bg-[#05080B] rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
+            <div className="bg-linear-gradient(45deg, #4FACFE 0%, #00F2FE 55%)-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
               <span className=" xsm:text-h6 text-body font-medium">
                 View More
               </span>

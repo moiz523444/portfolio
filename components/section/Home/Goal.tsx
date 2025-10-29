@@ -9,44 +9,49 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const sliderData = [
-  "Design",
-  "Develop",
-  "Implement",
-  "Design",
-  "Develop",
-  "Implement",
-  "Design",
-  "Develop",
-  "Implement",
-];
+// const sliderData = [
+//   "Design",
+//   "Develop",
+//   "Implement",
+//   "Design",
+//   "Develop",
+//   "Implement",
+//   "Design",
+//   "Develop",
+//   "Implement",
+// ];
 
 const OurGoal = () => {
   return (
-    <section id="about" className="overflow-x-hidden">
+    <section id="about" className="overflow-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 md:grid-cols-3 items-center">
           <div className=" 2xl:pr-16 lg:col-span-1 md:col-span-2">
-            <Pills>
-              <span className="leading-none text-white font-bold xsm:text-base text-sm">
-                About our Company
+            {/* <Pills>
+              <span className="leading-none text-black font-bold xsm:text-base text-sm">
+               About Our Company
               </span>
-            </Pills>
-            <h2 className="2xl:text-h2 xl:text-[4.875rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2]">
-              <Transition>Our Goal to</Transition>
-              <Transition>Satisfied Local</Transition>
-              <Transition>& Global Clients</Transition>
+            </Pills> */}
+            <h2 className="2xl:text-h3 xl:text-[4.875rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2]">
+              <Transition>About FinInnovator </Transition>
+              {/* <Transition>Lorem ipsum dolor </Transition>
+              <Transition>Lorem ipsum dolor </Transition> */}
             </h2>
-            <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:py-10 py-6 text-sm xsm:text-body">
-              We transform digital landscapes with innovative web development
-              solutions. Specializing in tailored, high-performance websites and
-              fintech services, we deliver secure payment gateways and
-              comprehensive financial platforms. Our expertise ensures clients
-              stay ahead in modern finance. Partner with{" "}
-              <b className="text-white/70">AVIORSOL</b> to unlock the full
-              potential of your digital strategy and achieve your business
-              goals.
+            <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:py-10 py-6 text-sm xsm:text-body text-slate-700 text-justify">
+              Welcome to FinInnovator Company, where innovation meets
+              reliability in the realm of digital solutions & Services for the
+              banking and financing sector. Established with a commitment to
+              revolutionize the way financing institutions operate, we take
+              pride in being at the forefront of technological advancements. We
+              envision a future where financing processes are seamless, secure,
+              and efficient. We strive to empower banks and financing
+              organizations with cutting-edge digital Solutions & Services that
+              not only meet current industry demands but also anticipate and
+              adapt to future challenges.{" "}
+              <b className="text-black">FinInnovator Company</b> cutting-edge
+              digital Solutions cutting-edge digital Solutions
             </p>
+
             <div className="flex items-end">
               <Link
                 className="rounded-full xsm:h-[72px] h-[58px] xsm:min-w-[18.75rem] min-w-[17.5rem] relative group"
@@ -54,8 +59,8 @@ const OurGoal = () => {
               >
                 <div className="bg-clip-padding p-[1px] relative isolate overflow-hidden min-w-14 gap-4 h-full rounded-full">
                   <div className="absolute w-full h-full btn-gradeint -z-10 top-0 left-0 animate-pulse group-hover:animate-none" />
-                  <div className="bg-[#05080B] rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
-                    <span className=" xsm:text-h6 text-body font-medium">
+                  <div className="bg-linear-gradient(45deg, #4FACFE 0%, #00F2FE 55%) rounded-full flex items-center justify-between w-full h-full px-[0.625rem] pl-[1.7rem]">
+                    <span className=" xsm:text-h6 text-body font-large text-black">
                       Get in Touch
                     </span>
                     <span className="group-hover:rotate-45 transition-all">
@@ -73,7 +78,7 @@ const OurGoal = () => {
                   viewBox="0 0 59 57"
                 >
                   <motion.path
-                    stroke="#fff"
+                    stroke="#000"
                     strokeDasharray="100"
                     strokeDashoffset="100"
                     initial={{ strokeDashoffset: 100 }}
@@ -102,7 +107,7 @@ const OurGoal = () => {
                 className="!static md:max-w-[560px] max-w-full"
               />
               <Image
-                src="/our-goal-small.webp"
+                src="/our-goal-small.png"
                 alt=""
                 width="350"
                 height="350"
@@ -112,7 +117,7 @@ const OurGoal = () => {
           </div>
         </div>
       </div>
-      <div className=" overflow-hidden relative sm:mt-52 xsm:mt-16 mt-8 py-2 pointer-events-none">
+      {/* <div className=" overflow-hidden relative sm:mt-52 xsm:mt-16 mt-8 py-2 pointer-events-none">
         <Swiper
           breakpoints={{
             0: {
@@ -191,7 +196,7 @@ const OurGoal = () => {
         <div className="absolute top-0 right-0 -z-10">
           <Image src="/top_bnr-shade2.webp" alt="" fill className="!static" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -31,27 +31,37 @@ const Card = ({
   return (
     <div
       ref={container}
-      className="md:h-[80vh] xsm:h-[60vh] h-[50vh] flex items-center justify-center sticky top-0"
+      className="md:h-[80vh] h-[60vh] flex items-center justify-center sticky top-0"
     >
       <motion.div
-        className="flex flex-col justify-center items-center relative xsl:h-[80%] xsm:h-[90%] h-[100%] xl:w-[80%] lg:w-[90%] w-full rounded-[1.25rem] sm:p-12 xsm:p-8 p-3 origin-top bg-card-foregrounddark overflow-hidden border border-white/10"
+        className="flex flex-col justify-center items-center relative h-full xl:w-[80%] lg:w-[90%] w-full rounded-2xl sm:p-8 p-4 origin-top bg-card overflow-hidden border border-white/10"
         style={{
           scale,
           top: `calc(10vh + ${i * 25}px)`,
+          background: "var(--card)",
         }}
       >
-        <h2 className="lg:text-[3.375rem] sm:text-[3rem] xsm:text-[2.25rem] text-[1.125rem] font-bold xsm:leading-[1.2] leading-none uppercase text-center">
+        <h2 className="xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-lg font-bold leading-tight uppercase text-center text-card-foreground mb-16">
           {title}
         </h2>
-        <div className="flex xsm:mt-[1.125rem] mt-[1rem] gap-[2.125rem]">
-          <div className="lg:w-[40%] sm:w-[60%] md:text-left text-center relative md:top-[10%] xsm:text-body text-sm flex-1 first-letter:text-h6">
-            <p>{description}</p>
+
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mt-4">
+          <div
+            className="
+    md:w-1/2 w-full text-card-foreground 
+    text-sm sm:text-base leading-relaxed
+    text-justify
+    line-clamp-3 md:line-clamp-none
+  "
+>
+            {description}
           </div>
-          <div className="relative w-fit flex-1 md:block hidden ">
-            <div className="max-h-72 w-full h-full rounded-[1.5625rem] overflow-hidden">
+
+          <div className="relative md:w-1/2 w-full flex justify-center">
+            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-xl overflow-hidden">
               <motion.img
                 style={{ scale: imageScale }}
-                className=" w-full h-full object-fill"
+                className="w-full h-auto object-cover"
                 src={src}
                 alt="image"
               />

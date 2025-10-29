@@ -27,10 +27,10 @@ const VisionCard = ({
     <div
       className={`rounded-[0.9375rem] xsm:px-[2.4375rem] px-[1.4375rem] xsm:py-[3.75rem] py-[1.75rem] group transition-all duration-700 flex flex-col items-center justify-center xsm:gap-7 gap-2 text-center relative overflow-hidden before:absolute before:top-[1px] before:-z-10 before:left-[1px] before:rounded-[0.9375rem] ${
         indexed === 1
-          ? "about_cards"
+          ? "bg-[#011f4b]"
           : indexed === 2
-          ? "bg-card-foregrounddark"
-          : "bg-card"
+          ? "bg-[#001f24]"
+          : "bg-black"
       }`}
       onMouseEnter={() => setActiveCard((prev) => !prev)}
       onMouseLeave={() => setActiveCard(false)}
@@ -46,7 +46,7 @@ const VisionCard = ({
         <div
           className={`group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 xsm:w-[133px] w-[99px] xsm:h-[133px] h-[99px] rounded-full translate-x-4 translate-y-4 grid place-items-center ${
             indexed === 2
-              ? "bg-card"
+              ? "bg-white"
               : indexed === 1
               ? "bg-white"
               : "bg-card-foreground"
@@ -55,12 +55,12 @@ const VisionCard = ({
           {iconRendering}
         </div>
       </div>
-      <h4 className="xl:text-h4 xsm:text-h5 text-h6 font-bold leading-none">
+      <h4 className="xl:text-h4 xsm:text-h5 text-h6 font-bold leading-none text-white">
         {cardContent.heading}
       </h4>
       <p
         className={`font-medium xsm:mb-9 xsm:text-body text-sm transition-all duration-300 ${
-          indexed === 1 ? "text-white" : ""
+          indexed === 1 ? "text-[#656a6d]" : ""
         }`}
       >
         {cardContent.details}
