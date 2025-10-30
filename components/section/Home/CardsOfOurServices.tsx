@@ -6,121 +6,122 @@ import Link from "next/link";
 const CardsOfOurServices = () => {
   const serviceCards = [
     {
-      image: "./assests/picturesofcards/digital_financing.jpg",
-      title: " Digital Financing",
-      href: "/LinkPage",
+      image: "/assests/picturesofcards/digital_financing.jpg",
+      title: "Digital Financing",
+      href: "link/DigitalFinancing",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Empower your business with next-gen digital financing solutions, enhancing speed and efficiency for smarter financial decisions.",
     },
     {
-      image: "./assests/picturesofcards/lo.jpg",
-      title: " Loan Origination",
-      href: "#",
+      image: "/assests/picturesofcards/lo.jpg",
+      title: "Loan Origination",
+      href: "link/LoanOrganization",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Streamline client loan processing with automated origination tools, enabling fast approvals and precise decision-making.",
     },
     {
-      image: "./assests/picturesofcards/loan_management.jpg",
-      title: " Loan Management",
-      href: "#",
+      image: "/assests/picturesofcards/loan_management.jpg",
+      title: "Loan Management",
+      href: "link/LoanManagement",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Simplify loan tracking and administration using robust management solutions designed for accuracy and efficiency.",
     },
     {
-      image: "./assests/picturesofcards/lc.jpg",
-      title: " Loan Collection",
-      href: "#",
+      image: "/assests/picturesofcards/lc.jpg",
+      title: "Loan Collection",
+      href: "link/LoanCollection",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Enhance recovery processes with smart collection tools, ensuring timely payments and improved cash flow management.",
     },
     {
-      image: "./assests/picturesofcards/leased.jpg",
+      image: "/assests/picturesofcards/leased.jpg",
       title: "Leased Inventory Management",
-      href: "#",
+      href: "link/LeasedInventoryMangement",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Optimize leased asset tracking and management with automated workflows, reducing errors and boosting operational efficiency.",
     },
     {
-      image: "./assests/picturesofcards/credit_engine.jpg",
+      image: "/assests/picturesofcards/credit_engine.jpg",
       title: "Credit Engine",
-      href: "#",
+      href: "link/CreditEngine",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Evaluate credit risk quickly and accurately using advanced credit engine solutions, improving approval speed and reliability.",
     },
     {
-      image: "./assests/picturesofcards/sme_loan.jpg",
-      title: " SME Loan Origination",
-      href: "#",
+      image: "/assests/picturesofcards/sme_loan.jpg",
+      title: "SME Loan Origination",
+      href: "link/SMELoanOrganization",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Accelerate SME loan processing with streamlined workflows, ensuring faster approvals and better client engagement.",
     },
     {
-      image: "./assests/picturesofcards/AML.jpg",
-      title: " AML & CF",
-      href: "#",
+      image: "/assests/picturesofcards/AML.jpg",
+      title: "AML & CF",
+      href: "link/AML&CF",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Stay compliant with AML and counter-fraud measures, safeguarding your organization while enabling smooth transactions.",
     },
     {
-      image: "./assests/picturesofcards/collateral_mangemnet.jpg",
+      image: "/assests/picturesofcards/collateral_mangemnet.jpg",
       title: "Collateral Management",
-      href: "#",
+      href: "link/CollateralManagement",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Manage and monitor collateral efficiently, ensuring proper asset control and risk mitigation across operations.",
     },
     {
-      image: "./assests/picturesofcards/reposession.jpg",
+      image: "/assests/picturesofcards/reposession.jpg",
       title: "Repossession Module",
-      href: "#",
+      href: "link/RepossessionModule",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Handle asset repossession with automated tools, improving recovery efficiency and minimizing operational delays.",
     },
     {
-      image: "./assests/picturesofcards/legal_case.jpg",
-      title: " Legal Case Management",
-      href: "#",
+      image: "/assests/picturesofcards/legal_case.jpg",
+      title: "Legal Case Management",
+      href: "link/LegalCaseManagement",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Track and manage legal cases effectively, ensuring accurate documentation and streamlined case workflows.",
     },
     {
-      image: "./assests/picturesofcards/treasure_management.jpg",
+      image: "/assests/picturesofcards/treasure_management.jpg",
       title: "Treasury Management",
-      href: "#",
+      href: "link/TreasuryManagement",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Enhance cash and liquidity management using advanced treasury solutions for optimized financial control.",
     },
     {
-      image: "./assests/picturesofcards/customer_service.jpg",
-      title: " Customer Service",
-      href: "#",
+      image: "/assests/picturesofcards/customer_service.jpg",
+      title: "Customer Service",
+      href: "link/CustomerService",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Improve client interactions with smart service tools, ensuring faster response times and enhanced satisfaction.",
     },
     {
-      image: "./assests/picturesofcards/document_management.jpg",
+      image: "/assests/picturesofcards/document_management.jpg",
       title: "Document Management System",
-      href: "#",
+      href: "link/DocumentManagementSystem",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Centralize and streamline document handling, enhancing accessibility, security, and workflow efficiency.",
     },
     {
-      image: "./assests/picturesofcards/Cyber_Security.jpg",
+      image: "/assests/picturesofcards/Cyber_Security.jpg",
       title: "Cyber Security",
-      href: "#",
+      href: "link/CyberSecurity",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Protect your digital infrastructure with proactive cybersecurity measures, ensuring safe and reliable operations.",
     },
     {
-      image: "./assests/picturesofcards/legal_case.jpg",
-      title: " Legal Case Management",
-      href: "#",
+      image: "/assests/picturesofcards/legal_case.jpg",
+      title: "Legal Case Management",
+      href: "link/LegalCaseManagement",
       paragraph:
-        "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
+        "Manage all legal documentation and proceedings with structured tools for smooth and organized case handling.",
     },
   ];
+
   return (
     <section>
-      <div className="container overflow-hidden">
+      <div id="CardsOfOurServices" className="container overflow-hidden">
         {/* Section Heading */}
         <span className="block 2xl:text-h2 xl:text-[4.875rem] xsm:text-h3 text-h6 font-heading font-bold mb-10">
           Our Solutions

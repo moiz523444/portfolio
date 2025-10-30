@@ -17,6 +17,9 @@ const navLinks = [
   { href: "#hero", label: "Home" },
   { href: "#about", label: "About us" },
   { href: "#services", label: "Services" },
+  { href: "#work", label: "Work" },
+  { href: "#CardsOfOurServices", label: "Our Solution" },
+
   // { href: "#testimonials", label: "Testimonials" },
 ];
 
@@ -99,11 +102,9 @@ const Navbar = () => {
               width: isView ? `${navBarWidth}%` : "100%",
               left: isView ? "50%" : "0%",
               x: isView ? "-50%" : "0%",
-              background: isView
-                ? "rgba(241, 245, 249, 0.4)" 
-                : "transparent",
+              background: isView ? "rgba(241, 245, 249, 0.4)" : "transparent",
               backdropFilter: isView ? "blur(12px)" : "none",
-              WebkitBackdropFilter: isView ? "blur(12px)" : "none", 
+              WebkitBackdropFilter: isView ? "blur(12px)" : "none",
               boxShadow: isView ? "0 4px 20px rgba(0,0,0,0.1)" : "none",
             }}
           >

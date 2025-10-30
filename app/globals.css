@@ -202,3 +202,4 @@ label.custom_label textarea:focus-within + span {
   width: 100%;
   height: 100%;
 }
+/* ✅ Fix Navbar Overlap */
