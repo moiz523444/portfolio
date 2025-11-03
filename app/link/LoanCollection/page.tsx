@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import CardsOfOurServices from "@/components/section/Home/CardsOfOurServices"; // correct path
 import PageTransition from "@/components/ui/PageTransition";
 
-const LoanCollectionPage = () => {
+const Page = () => {
   return (
     <PageTransition>
       <section className="w-full">
@@ -83,4 +83,4 @@ const LoanCollectionPage = () => {
   );
 };
 
-export default LoanCollectionPage;
+export default Page;

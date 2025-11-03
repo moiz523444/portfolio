@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import CardsOfOurServices from "@/components/section/Home/CardsOfOurServices";
 import PageTransition from "@/components/ui/PageTransition";
 
-const LegalCaseManagementPage = () => {
+const Page = () => {
   return (
     <PageTransition>
       <section className="w-full">
@@ -89,4 +89,4 @@ const LegalCaseManagementPage = () => {
   );
 };
 
-export default LegalCaseManagementPage;
+export default Page;

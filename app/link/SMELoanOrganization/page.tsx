@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import CardsOfOurServices from "@/components/section/Home/CardsOfOurServices"; // correct path
 import PageTransition from "@/components/ui/PageTransition";
 
-const SMELoanOriginationPage = () => {
+const Page = () => {
   return (
     <PageTransition>
       <section className="w-full">
@@ -83,4 +83,4 @@ const SMELoanOriginationPage = () => {
   );
 };
 
-export default SMELoanOriginationPage;
+export default Page;

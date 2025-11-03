@@ -8,7 +8,7 @@ const CardsOfOurServices = () => {
     {
       image: "./assests/picturesofcards/digital_financing.jpg",
       title: " Digital Financing",
-      href: "/LinkPage",
+      href: "/link/DigitalFinancing",
       paragraph:
         "  Unlock the future of financing with our cutting-edge digital financing solutions, delivering innovation and efficiency at fingertips.",
     },

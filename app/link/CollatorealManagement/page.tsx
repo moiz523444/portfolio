@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import CardsOfOurServices from "@/components/section/Home/CardsOfOurServices"; // correct path
 import PageTransition from "@/components/ui/PageTransition";
 
-const CollateralManagementPage = () => {
+const Page = () => {
   return (
     <PageTransition>
       <section className="w-full">
@@ -82,4 +82,4 @@ const CollateralManagementPage = () => {
   );
 };
 
-export default CollateralManagementPage;
+export default Page;

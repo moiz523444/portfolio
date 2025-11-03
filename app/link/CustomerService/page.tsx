@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import CardsOfOurServices from "@/components/section/Home/CardsOfOurServices";
 import PageTransition from "@/components/ui/PageTransition";
 
-const CustomerServicePage = () => {
+const Page = () => {
   return (
     <PageTransition>
       <section className="w-full">
@@ -86,4 +86,4 @@ const CustomerServicePage = () => {
   );
 };
 
-export default CustomerServicePage;
+export default Page;
