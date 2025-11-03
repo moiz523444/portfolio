@@ -6,9 +6,9 @@ import Link from "next/link";
 const CardsOfOurServices = () => {
   const serviceCards = [
     {
-      image: "/assests/picturesofcards/digital_financing.jpg",
-      title: "Digital Financing",
-      href: "link/DigitalFinancing",
+      image: "./assests/picturesofcards/digital_financing.jpg",
+      title: " Digital Financing",
+      href: "/link/DigitalFinancing",
       paragraph:
         "Empower your business with next-gen digital financing solutions, enhancing speed and efficiency for smarter financial decisions.",
     },

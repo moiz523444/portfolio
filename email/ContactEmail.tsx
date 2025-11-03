@@ -1,6 +1,4 @@
-// emails/ContactEmail.tsx
-import * as React from "react";
-import { Html, Body, Container, Heading, Text } from "@react-email/components";
+import React from "react";
 
 interface ContactEmailProps {
   name: string;
@@ -8,38 +6,49 @@ interface ContactEmailProps {
   message: string;
 }
 
-export const ContactEmail = ({ name, email, message }: ContactEmailProps) => (
-  <Html>
-    <Body
+const ContactEmail: React.FC<ContactEmailProps> = ({
+  name,
+  email,
+  message,
+}) => {
+  return (
+    <div
       style={{
         fontFamily: "Arial, sans-serif",
         backgroundColor: "#f6f9fc",
         padding: "20px",
+        minHeight: "100vh",
       }}
     >
-      <Container
+      <div
         style={{
+          maxWidth: "600px",
+          margin: "auto",
           backgroundColor: "#ffffff",
           padding: "20px",
           borderRadius: "8px",
+          boxShadow: "0 0 10px rgba(0,0,0,0.1)",
         }}
       >
-        <Heading style={{ color: "#333" }}>New Contact Form Submission</Heading>
-        <Text>
+        <h2 style={{ color: "#333" }}>New Contact Form Submission</h2>
+        <p>
           <strong>Name:</strong> {name}
-        </Text>
-        <Text>
+        </p>
+        <p>
           <strong>Email:</strong> {email}
-        </Text>
-        <Text>
+        </p>
+        <p>
           <strong>Message:</strong> {message}
-        </Text>
-        <Text>
-          Website: <a href="https://finnovator.com.sa/">finnovator.com.sa</a>
-        </Text>
-      </Container>
-    </Body>
-  </Html>
-);
+        </p>
+        <p>
+          Website:{" "}
+          <a href="https://finnovator.com.sa/" target="_blank" rel="noreferrer">
+            finnovator.com.sa
+          </a>
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default ContactEmail;
