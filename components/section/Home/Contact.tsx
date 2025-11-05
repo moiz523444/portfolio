@@ -40,7 +40,7 @@ const ContactUs = () => {
     <section id="contact" className="xsm:pb-32 pb-16 scroll-mt-10 mt-28">
       <div className="container flex justify-center">
         <div className="w-full max-w-2xl bg-[#b9e1ff] text-center rounded-[0.9375rem] md:py-20 xsm:pt-8 xsm:pb-16 xsm:px-14 px-5 pt-3 pb-4">
-          <h3 className="sm:text-h3 xsm:text-h4 text-h5 font-bold text-black mb-24">
+          <h3 className="sm:text-h3 xsm:text-h4 text-h5 font-bold text-black mb-4">
             Get in Touch
           </h3>
 

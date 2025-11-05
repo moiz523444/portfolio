@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "Finnovator Contact <onboarding@resend.dev>",
-      to: "finnovatormeweb@gmail.com", // apni email
+      to: "finnovatormeweb@gmail.com",
       subject: "New Contact Form Submission",
       react: React.createElement(ContactEmail, { name, email, message }),
     });
