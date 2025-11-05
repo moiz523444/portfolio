@@ -64,21 +64,21 @@ const CardsOfOurServices = () => {
     {
       image: "/assests/picturesofcards/collateral_mangemnet.jpg",
       title: "Collateral Management",
-      href: "/link/CollateralManagement",
+      href: "/link/CollatorealManagement",
       paragraph:
         "Manage and monitor collateral efficiently, ensuring proper asset control and risk mitigation across operations.",
     },
     {
       image: "/assests/picturesofcards/reposession.jpg",
       title: "Repossession Module",
-      href: "/link/RepossessionModule",
+      href: "/link/RepossisionModule",
       paragraph:
         "Handle asset repossession with automated tools, improving recovery efficiency and minimizing operational delays.",
     },
     {
       image: "/assests/picturesofcards/legal_case.jpg",
       title: "Legal Case Management",
-      href: "/link/LegalCaseManagement",
+      href: "/link/LegalCasesManagement",
       paragraph:
         "Track and manage legal cases effectively, ensuring accurate documentation and streamlined case workflows.",
     },
@@ -99,7 +99,7 @@ const CardsOfOurServices = () => {
     {
       image: "/assests/picturesofcards/document_management.jpg",
       title: "Document Management System",
-      href: "/link/DocumentManagementSystem",
+      href: "/link/DocumentManagement",
       paragraph:
         "Centralize and streamline document handling, enhancing accessibility, security, and workflow efficiency.",
     },
@@ -113,7 +113,7 @@ const CardsOfOurServices = () => {
     {
       image: "/assests/picturesofcards/legal_case.jpg",
       title: "Legal Case Management",
-      href: "/link/LegalCaseManagement",
+      href: "/link/LegalCasesManagement",
       paragraph:
         "Manage all legal documentation and proceedings with structured tools for smooth and organized case handling.",
     },

@@ -123,12 +123,13 @@ const Navbar = () => {
                 {navLinks.map((navItem) => (
                   <li key={navItem.label}>
                     <Link
-                      className={`relative text-nowrap ${
-                        pathName === navItem.href ? "text-white" : "text-link"
-                      }`}
+                      className={`relative text-nowrap xsm:text-body text-sm text-black 
+    transition-all duration-300 hover:text-[#2ca6e1] hover:scale-105`}
                       href={`/${navItem.href}`}
                     >
-                      {navItem.label}
+                      <span className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#2ca6e1] after:transition-all after:duration-300 hover:after:w-full">
+                        {navItem.label}
+                      </span>
                     </Link>
                   </li>
                 ))}

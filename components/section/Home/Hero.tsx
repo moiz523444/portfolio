@@ -51,7 +51,7 @@ const Hero = () => {
 
         {/* Rotating Logo */}
         <div
-          className=" md:w-[160px] md:h-[160px] sm:w-[160px] xsm:w-[120px] w-[80px] sm:h-[160px] xsm:h-[120px] h-[80px] !bg-no-repeat !bg-cover absolute xl:top-[40%] lg:top-[26%] sm:top-[24%] top-[-24%] xl:right-[25%] lg:right-[10%] right-[10%] overflow-hidden filter brightness-0 "
+          className=" md:w-[160px] md:h-[160px] sm:w-[160px] xsm:w-[120px] w-[80px] sm:h-[160px] xsm:h-[120px] h-[80px] !bg-no-repeat !bg-cover absolute xl:top-[35%] lg:top-[26%] sm:top-[24%] top-[-24%] xl:right-[25%] lg:right-[10%] right-[10%] overflow-hidden filter brightness-0 "
           style={{ background: "url(/inner-logo.webp)" }}
         >
           <Image

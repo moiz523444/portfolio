@@ -38,14 +38,19 @@ export default function Template({ children }: { children: React.ReactNode }) {
       >
         <div className="md:block hidden">
           <AnimatedCursor
-            color="0, 0 ,0" // Black cursor for visibility on light background
+            color="255,255,255" // ✅ Inner Circle White
             innerSize={12}
-            outerSize={35}
+            outerSize={42}
             innerScale={1}
-            outerScale={1.7}
-            outerAlpha={0.8} // Slight transparency for a softer effect
+            outerScale={2}
+            outerAlpha={0.5}
+            innerStyle={{
+              backgroundColor: "#ffffff", // Pure white inner dot
+            }}
             outerStyle={{
-              mixBlendMode: "multiply", // works better on light backgrounds
+              background: "linear-gradient(45deg, #3c79be, #6ba3e6)", // Your theme blue gradient
+              mixBlendMode: "multiply",
+              borderRadius: "50%",
             }}
           />
         </div>
