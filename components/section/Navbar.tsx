@@ -19,8 +19,6 @@ const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#work", label: "Work" },
   { href: "#CardsOfOurServices", label: "Our Solution" },
-
-  // { href: "#testimonials", label: "Testimonials" },
 ];
 
 const Navbar = () => {
@@ -108,16 +106,24 @@ const Navbar = () => {
               boxShadow: isView ? "0 4px 20px rgba(0,0,0,0.1)" : "none",
             }}
           >
-            <div className="flex items-end justify-start pl-3">
-              <Image src="/logo.png" alt="Logo" width="70" height="60" />
+            <div className="relative flex items-end justify-start pl-3">
               <Image
-                className={`ml-[-38px] ${isView ? "hidden" : ""}`}
+                className="xsm:w-[70px] w-[50px]"
+                src="/logo.png"
+                alt="Logo"
+                width={70}
+                height={60}
+              />
+
+              <Image
+                className={`xsm:w-[101px] w-[80px] absolute left-[45px] ${isView ? "hidden" : ""}`}
                 src="/logo-title.png"
                 alt="Logo"
-                width="101"
-                height="60"
+                width={101}
+                height={60}
               />
             </div>
+
             <div className="flex gap-9">
               <ul className="flex gap-9 items-center">
                 {navLinks.map((navItem) => (

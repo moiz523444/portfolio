@@ -33,12 +33,12 @@ const OurGoal = () => {
               </span>
             </Pills> */}
             <h2 className="2xl:text-h3 xl:text-[4.875rem] xsm:text-h3 text-h5 pt-4 xsm:pt-0 font-bold leading-[1.2]">
-              <Transition>About FinInnovator </Transition>
+              <Transition>About Finnovator </Transition>
               {/* <Transition>Lorem ipsum dolor </Transition>
               <Transition>Lorem ipsum dolor </Transition> */}
             </h2>
             <p className="md:max-w-[33.75rem] max-w-[50rem] xsm:py-10 py-6 text-sm xsm:text-body text-slate-700 text-justify">
-              Welcome to FinInnovator Company, where innovation meets
+              Welcome to Finnovator Company, where innovation meets
               reliability in the realm of digital solutions & Services for the
               banking and financing sector. Established with a commitment to
               revolutionize the way financing institutions operate, we take
@@ -48,7 +48,7 @@ const OurGoal = () => {
               organizations with cutting-edge digital Solutions & Services that
               not only meet current industry demands but also anticipate and
               adapt to future challenges.{" "}
-              <b className="text-black">FinInnovator Company</b> cutting-edge
+              <b className="text-black">Finnovator Company</b> cutting-edge
               digital Solutions cutting-edge digital Solutions
             </p>
 

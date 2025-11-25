@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="relative overflow-hidden">
               <Transition>
                 <span className=" xsm:ml-[1.5em] ml-[1.25em] inline-block">
-                  FININNOVATOR
+                  FINNOVATOR
                 </span>
               </Transition>
             </div>
