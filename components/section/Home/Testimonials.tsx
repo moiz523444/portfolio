@@ -9,7 +9,7 @@ const testimonials = [
     name: "Hassan Bhai",
     role: "Product Manager",
     image: "/micheal.png",
-    feedback: `FinInnovator company  completely transformed our online presence. Their team took the time to understand our 
+    feedback: `Finnovator company  completely transformed our online presence. Their team took the time to understand our 
     business goals and delivered a website that is both visually stunning and highly functional he is professionalism `,
   },
   // {

@@ -6,8 +6,8 @@ const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "FinInnovator",
-  description: "FinInnovator",
+  title: "Finnovator",
+  description: "Finnovator",
 };
 
 export default function RootLayout({

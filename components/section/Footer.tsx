@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="grid xsm:grid-cols-3 gap-4">
             {/* Logo + Address */}
             <div>
-              <div className="flex items-end justify-start pl-3 mb-4">
+              {/* <div className="flex items-end justify-start pl-3 mb-4">
                 <Image src="/logo.png" alt="Logo" width="70" height="60" />
                 <Image
                   className="ml-[-38px]"
@@ -40,8 +40,26 @@ const Footer = () => {
                   width="101"
                   height="60"
                 />
+              </div> */}
+              <div className="relative flex items-end justify-start pl-3">
+                <Image
+                  className="xsm:w-[70px] w-[50px] mb-1"
+                  src="/logo.png"
+                  alt="Logo"
+                  width={70}
+                  height={60}
+                />
+
+                <Image
+                  className="xsm:w-[101px] w-[80px] absolute left-[45px] "
+                  src="/logo-title.png"
+                  alt="Logo"
+                  width={101}
+                  height={60}
+                />
               </div>
-              <p className="text-black text-lg ml-3 leading-tight">
+
+              <p className="text-black text-lg ml-3 leading-tight mt-3">
                 Riyadh, Saudi Arabia
               </p>
             </div>
@@ -67,8 +85,8 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border border-black flex flex-col items-center rounded-sm py-4 px-5 gap-3 mt-24">
             <p className="xsm:text-sm text-[0.75rem] text-black text-center">
-              Copyright© {new Date().getFullYear()}. FinInnovator.com all
-              rights reserved
+              Copyright© {new Date().getFullYear()}. Finnovator.com all rights
+              reserved
             </p>
           </div>
         </div>
